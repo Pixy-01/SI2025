@@ -1,5 +1,5 @@
 <!-- realizar_pedido.blade.php -->
-@extends('layout')
+@extends('layouts.layout_cliente')
 
 @section('content')
 <div class="hero-section text-center">

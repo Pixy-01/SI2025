@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +16,16 @@
             padding: 100px 0;
             margin-bottom: 40px;
         }
+
         .category-card {
             transition: transform 0.3s;
             cursor: pointer;
         }
+
         .category-card:hover {
             transform: translateY(-5px);
         }
+
         .product-card {
             border: none;
             border-radius: 10px;
@@ -29,19 +33,23 @@
             transition: all 0.3s;
             margin-bottom: 20px;
         }
+
         .product-card:hover {
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
+
         .navbar-brand {
             font-weight: 700;
             font-size: 1.5rem;
         }
+
         .status-badge {
             font-size: 0.9rem;
             padding: 0.35rem 0.75rem;
         }
     </style>
 </head>
+
 <body>
     <!-- layout.blade.php - Plantilla base -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -55,16 +63,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-house"></i> Inicio</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-menu-up"></i> Menú</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-question-circle"></i> Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-person"></i> Mi Cuenta</a>
+                        <a class="nav-link" href="{{ route('login') }}"><i class="bi bi-person"></i> Mi Cuenta</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-cart3"></i> Carrito (0)</a>
@@ -86,15 +91,16 @@
                 </div>
                 <div class="col-md-4">
                     <h5>Horario</h5>
-                    <p>Lunes a Viernes: 7am - 8pm<br>
-                    Sábados: 8am - 6pm<br>
-                    Domingos: 9am - 4pm</p>
+                    <p>Lunes a Viernes: 7am - 7pm<br>
+                        Sábados: 7am - 7pm<br>
+                        Domingos: cerrado</p>
                 </div>
                 <div class="col-md-4">
                     <h5>Contacto</h5>
-                    <p><i class="bi bi-geo-alt"></i> Av. Principal #123<br>
-                    <i class="bi bi-telephone"></i> (555) 123-4567<br>
-                    <i class="bi bi-envelope"></i> info@divinopan.com</p>
+                    <p><i class="bi bi-geo-alt"></i> Av. Monseñor Rivero, entre 1er y 2do anillo<br>
+                        <i class="bi bi-telephone"></i> +591 60328777<br>
+                        <i class="bi bi-envelope"></i> divinopan.dp24@gmail.com
+                    </p>
                 </div>
             </div>
             <hr>
@@ -107,4 +113,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     @yield('scripts')
 </body>
+
 </html>

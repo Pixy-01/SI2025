@@ -1,5 +1,5 @@
 <!-- estado_pedido.blade.php -->
-@extends('layout')
+@extends('layouts.layout_cliente')
 
 @section('content')
 <div class="container py-5">
